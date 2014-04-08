@@ -1,3 +1,6 @@
-name: A Catered Affair -- Traverse City, MI Gourmet Catering
+name: A Catered Affair
+desc: Traverse City, MI Gourmet Catering
+slug: Make it a memorable affair... make it A Catered Affair
+location: Traverse City, MI
 markdown: redcarpet
 pygments: true

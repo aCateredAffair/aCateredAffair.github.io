@@ -1,0 +1,168 @@
+
+
+
+
+
+
+
+// App Vars   -------------------------------------------------------------
+$fontSizeSmall: 12px
+$fontSize: 14px
+$fontSizeLarge: 18px
+$fontSizeHuge: 24px
+
+// Color Vars -------------------------------------------------------------
+$foreground: #222
+$muted: #666
+
+$blue: rgb(73,97,148)
+$blueGray: rgb(86,98,115)
+$coolGray: rgb(120,133,145)
+$paleGreen: rgb(153,169,155)
+$warmGray: rgb(121,121,108)
+$palePurple: rgb(147,137,143)
+$coolBrown: rgb(121,110,102)
+$brown: rgb(100,93,81)
+$red: rgb(165,67,64)
+
+$mainColor: $palePurple
+
+$light80: rgba(white,0.8)
+
+// Helpers    -------------------------------------------------------------
+.pullRight
+  float: right
+.muted
+  color: $muted
+$sizeWide: 600px
+@mixin narrow
+  @media (max-width: $sizeWide)
+    @content
+@mixin wide
+  @media (min-width: $sizeWide+1)
+    @content
+
+// Reset      -------------------------------------------------------------
+body, html, h1,h2,h3,h4,h5
+  line-height: 1.5
+  color: $foreground
+body
+  img
+    max-width: 100%
+  h1,h2,h3,h4,h5
+    font-size: $fontSizeLarge
+    font-weight: 300
+    margin: 0
+    margin-bottom: 10px
+  h1
+    font-size: $fontSizeHuge
+  small
+    font-size: $fontSizeSmall
+
+// Layout     -------------------------------------------------------------
+
+// Typography -------------------------------------------------------------
+body, input, textarea, select
+  font-size: $fontSize
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif
+
+
+// Header     -------------------------------------------------------------
+.head
+  min-height: 50px
+  .logo
+    position: absolute
+    top: 1px
+    left: 0
+    width: 48px
+    height: 50px
+  h1
+    display: inline-block
+    font-size: $fontSizeLarge
+    line-height: 20px
+    letter-spacing: .02em
+  .phone, .desc
+    float: right
+    margin-right: 10px
+  .phone
+    line-height: 20px
+  .bar.top
+    height: 15px
+  .bar
+    line-height: 15px
+    margin-left: 15px
+    padding-left: 35px
+    color: $muted
+  .bar.main
+    height: 20px
+    background-color: $mainColor
+    font-color: white
+  small.bar
+    display: block
+    height: auto
+    min-height: 13px
+    line-height: 15px
+  a
+    color: white
+    text-decoration: none
+    &:hover
+      color: white
+      text-decoration: underline
+
+
+// Nav        -------------------------------------------------------------
+.mainNav
+  //background-color: mix(white, $mainColor, 75%)
+  box-shadow: inset 0 -1px 0 0 mix(white, $mainColor, 75%), inset 0 1px 0 0 mix(white, $mainColor, 85%)
+  background-color: mix(white, $mainColor, 98%)
+  margin: 5px 0
+  min-height: 40px
+  .nav
+    li a
+      padding: 10px 25px
+      color: $foreground
+      &:hover, &:focus
+        color: black
+        background-color: mix(white, $mainColor, 95%)
+        box-shadow: inset 0 -1px 0 0 mix(white, $mainColor, 85%), inset 0 1px 0 0 mix(white, $mainColor, 75%)
+    li.active a
+      background-color: mix(white, $mainColor, 85%)
+      box-shadow: inset 0 1px 0 0 rgba($mainColor, .25), inset 0 0 0 1px mix(white, $mainColor, 70%)
+  .nav .dropdown-toggle
+    text-align: right
+
+
+
+  // Open it up on wide screens
+  +wide
+    font-size: 0
+    //box-shadow: inset 0 -1px 0 0 mix(white, $mainColor, 75%), inset 0 1px 0 0 mix(white, $mainColor, 85%)
+    //background-color: mix(white, $mainColor, 98%)
+    .navbar-nav
+      margin: 0
+    .dropdown-toggle
+      display: none
+    .dropdown-menu
+      padding: 0
+      background-color: mix(white, $mainColor, 98%)
+      box-shadow: inset 0 -1px 0 0 mix(white, $mainColor, 75%), inset 0 1px 0 0 mix(white, $mainColor, 85%)
+      font-size: $fontSize
+      top: auto
+      position: relative
+      float: none
+      margin: 0
+      border: none
+      display: block
+      li
+        display: inline-block
+        a
+          background: none
+          padding: 10px
+          &:hover, &:focus
+            box-shadow: inset 0 1px 0 0 rgba($mainColor, .15), inset 0 0 0 1px mix(white, $mainColor, 80%)
+
+
+
+
+.content
+  padding: 10px

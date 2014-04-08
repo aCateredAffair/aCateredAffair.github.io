@@ -1,5 +1,6 @@
 ---
 layout: default
+name: About
 title: About -- A Catered Affair -- Traverse City, MI Gourmet Catering
 ---
 

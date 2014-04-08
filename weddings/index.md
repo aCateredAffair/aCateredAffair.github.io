@@ -1,5 +1,6 @@
 ---
 layout: default
+name: Weddings
 title: Wedding Catering -- Traverse City, MI Gourmet Catering
 ---
 
