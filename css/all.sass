@@ -28,6 +28,7 @@ $red: rgb(165,67,64)
 $mainColor: $palePurple
 
 $light80: rgba(white,0.8)
+$shadeThin: rgba(black,0.2)
 
 // Helpers    -------------------------------------------------------------
 .pullRight
@@ -112,10 +113,10 @@ body, input, textarea, select
 
 // Nav        -------------------------------------------------------------
 .mainNav
-  //background-color: mix(white, $mainColor, 75%)
+  position: relative
   box-shadow: inset 0 -1px 0 0 mix(white, $mainColor, 75%), inset 0 1px 0 0 mix(white, $mainColor, 85%)
   background-color: mix(white, $mainColor, 98%)
-  margin: 5px 0
+  margin-top: 5px
   min-height: 40px
   .nav
     li a
@@ -160,6 +161,14 @@ body, input, textarea, select
           padding: 10px
           &:hover, &:focus
             box-shadow: inset 0 1px 0 0 rgba($mainColor, .15), inset 0 0 0 1px mix(white, $mainColor, 80%)
+
+
+// Bruce Banner -------------------------------------------------------------
+.banner
+  margin-bottom: 10px
+  background: $mainColor
+  img
+    margin-top: -10px
 
 
 

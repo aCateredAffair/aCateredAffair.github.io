@@ -1,5 +1,6 @@
 ---
 layout: default
+id: guidelines
 title: Guidelines -- A Catered Affair -- Traverse City, MI Gourmet Catering
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 name: Casual Events
+id: casual
 title: Casual Events -- A Catered Affair -- Traverse City, MI Gourmet Catering
 ---
 

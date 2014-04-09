@@ -1,6 +1,7 @@
 ---
 layout: default
 name: Formal Events
+id: formal
 title: Formal Events -- A Catered Affair -- Traverse City, MI Gourmet Catering
 ---
 

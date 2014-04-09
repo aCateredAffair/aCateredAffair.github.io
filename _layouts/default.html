@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="/css/all.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
   </head>
-  <body>
+  <body class="{{page.id}}Page">
 
     {% include header.html %}
     {% include nav.html %}
+    <div class="banner {{page.id}}">
+      <img src="/images/gfx/{{page.id}}.jpg" alt="{{page.title}} -- Traverse City Catering"/>
+    </div>
 
     <div class="content">
       {{ content }}

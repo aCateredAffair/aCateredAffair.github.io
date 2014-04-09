@@ -1,6 +1,7 @@
 ---
 layout: default
 name: Contact Us
+id: contact
 title: Contact Us -- A Catered Affair -- Traverse City, MI Gourmet Catering
 ---
 
