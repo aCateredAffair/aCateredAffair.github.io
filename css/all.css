@@ -20,6 +20,10 @@ body h1 {
 body small {
   font-size: 12px; }
 
+.content {
+  padding: 10px;
+  max-width: 900px; }
+
 body, input, textarea, select {
   font-size: 14px;
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -115,5 +119,32 @@ body, input, textarea, select {
   .banner img {
     margin-top: -10px; }
 
-.content {
-  padding: 10px; }
+.homePage .banner, .homePage .head .bar.main {
+  background-color: #93898f; }
+.homePage h1, .homePage h2, .homePage h3 {
+  color: #93898f; }
+
+.aboutPage .banner, .aboutPage .head .bar.main {
+  background-color: #496194; }
+.aboutPage h1, .aboutPage h2, .aboutPage h3 {
+  color: #496194; }
+
+.weddingsPage .banner, .weddingsPage .head .bar.main {
+  background-color: #99a99b; }
+.weddingsPage h1, .weddingsPage h2, .weddingsPage h3 {
+  color: #99a99b; }
+
+.casualPage .banner, .casualPage .head .bar.main {
+  background-color: #566273; }
+.casualPage h1, .casualPage h2, .casualPage h3 {
+  color: #566273; }
+
+.formalPage .banner, .formalPage .head .bar.main {
+  background-color: #645d51; }
+.formalPage h1, .formalPage h2, .formalPage h3 {
+  color: #645d51; }
+
+.contactPage .banner, .contactPage .head .bar.main {
+  background-color: #79796c; }
+.contactPage h1, .contactPage h2, .contactPage h3 {
+  color: #79796c; }
